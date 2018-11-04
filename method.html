@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta name="description" content="">
+                    <meta name="author" content="">
+
+        <title>LA BikeShare</title>
+        <link rel="icon" href="img/bike_icon.jpg">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+
+      </head>
+
+    <body id="page-top">
+
+      <div class="container-fluid">
+        <div class="header clearfix">
+            <nav>
+              <center><a href = "index.html"><img src="img/bike_icon.jpg" width="5%"></a></img></center>
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="method.html">Methodology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visual.html">Visualizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusion.html">Conclusion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+<br>
+<br>
+
+
+
+<div class="content">
+  <h1>Goal:</h1>
+  <p>
+<b>To solve this challenge, build a web app that provides:</b>
+<br>
+Data Visuals: Display or graph 3 metrics or trends from the data set that are interesting to you.<br>
+Which start/stop stations are most popular?<br>
+What is the average distance traveled?<br>
+How many riders include bike sharing as a regular part of their commute?<br>
+<br>
+<br>
+<br>
+<b>(Optional) Bonus features you may want to include to stand out:<br></b>
+
+How does ridership change with seasons? Types of passes used, trip duration, etc<br>
+Is there a net change of bikes over the course of a day? If so, when and<br>
+where should bikes be transported in order to make sure bikes match travel patterns?<br>
+What is the breakdown of Trip Route Category-Passholder type combinations? What might make a particular combination more popular?<br>
+<br>
+<br>
+<br>
+
+
+
+<h1>Our Data</h1>
+<p>Segement of our data source.
+</div>
+
+<table width="100%">
+<thead><tr><th title="Field #1">Trip ID</th>
+<th title="Field #2">Duration</th>
+<th title="Field #3">Start Time</th>
+<th title="Field #4">End Time</th>
+<th title="Field #5">Starting Station ID</th>
+<th title="Field #6">Starting Station Latitude</th>
+<th title="Field #7">Starting Station Longitude</th>
+<th title="Field #8">Ending Station ID</th>
+<th title="Field #9">Ending Station Latitude</th>
+<th title="Field #10">Ending Station Longitude</th>
+<th title="Field #11">Bike ID</th>
+<th title="Field #12">Plan Duration</th>
+<th title="Field #13">Trip Route Category</th>
+<th title="Field #14">Passholder Type</th>
+<th title="Field #15">Starting Lat-Long</th>
+<th title="Field #16">Ending Lat-Long</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">1912818</td>
+<td align="right">180</td>
+<td>2016-07-07T04:17:00</td>
+<td>2016-07-07T04:20:00</td>
+<td align="right">3014</td>
+<td align="right">34.0566101</td>
+<td align="right">-118.23721</td>
+<td align="right">3014</td>
+<td align="right">34.0566101</td>
+<td align="right">-118.23721</td>
+<td align="right">6281</td>
+<td align="right">30</td>
+<td>Round Trip</td>
+<td>Monthly Pass</td>
+<td>{&#39;longitude&#39;: &#39;-118.23721&#39;, &#39;latitude&#39;: &#39;34.0566101&#39;, &#39;needs_recoding&#39;: False}</td>
+<td>{&#39;longitude&#39;: &#39;-118.23721&#39;, &#39;latitude&#39;: &#39;34.0566101&#39;, &#39;needs_recoding&#39;: False}</td>
+</tr>
+<tr>
+<td align="right">1919661</td>
+<td align="right">1980</td>
+<td>2016-07-07T06:00:00</td>
+<td>2016-07-07T06:33:00</td>
+<td align="right">3014</td>
+<td align="right">34.0566101</td>
+<td align="right">-118.23721</td>
+<td align="right">3014</td>
+<td align="right">34.0566101</td>
+<td align="right">-118.23721</td>
+<td align="right">6281</td>
+<td align="right">30</td>
+<td>Round Trip</td>
+<td>Monthly Pass</td>
+<td>{&#39;longitude&#39;: &#39;-118.23721&#39;, &#39;latitude&#39;: &#39;34.0566101&#39;, &#39;needs_recoding&#39;: False}</td>
+<td>{&#39;longitude&#39;: &#39;-118.23721&#39;, &#39;latitude&#39;: &#39;34.0566101&#39;, &#39;needs_recoding&#39;: False}</td>
+</tr>
+<tr>
+<td align="right">1933383</td>
+<td align="right">300</td>
+<td>2016-07-07T10:32:00</td>
+<td>2016-07-07T10:37:00</td>
+<td align="right">3016</td>
+<td align="right">34.0528984</td>
+<td align="right">-118.24156</td>
+<td align="right">3016</td>
+<td align="right">34.0528984</td>
+<td align="right">-118.24156</td>
+<td align="right">5861</td>
+<td align="right">365</td>
+<td>Round Trip</td>
+<td>Flex Pass</td>
+<td>{&#39;longitude&#39;: &#39;-118.24156&#39;, &#39;latitude&#39;: &#39;34.0528984&#39;, &#39;needs_recoding&#39;: False}</td>
+<td>{&#39;longitude&#39;: &#39;-118.24156&#39;, &#39;latitude&#39;: &#39;34.0528984&#39;, &#39;needs_recoding&#39;: False}</td>
+</tr>
+<tr>
+<td align="right">1944197</td>
+<td align="right">10860</td>
+<td>2016-07-07T10:37:00</td>
+<td>2016-07-07T13:38:00</td>
+<td align="right">3016</td>
+<td align="right">34.0528984</td>
+<td align="right">-118.24156</td>
+<td align="right">3016</td>
+<td align="right">34.0528984</td>
+<td align="right">-118.24156</td>
+<td align="right">5861</td>
+<td align="right">365</td>
+<td>Round Trip</td>
+<td>Flex Pass</td>
+<td>{&#39;longitude&#39;: &#39;-118.24156&#39;, &#39;latitude&#39;: &#39;34.0528984&#39;, &#39;needs_recoding&#39;: False}</td>
+<td>{&#39;longitude&#39;: &#39;-118.24156&#39;, &#39;latitude&#39;: &#39;34.0528984&#39;, &#39;needs_recoding&#39;: False}</td>
+</tr>
+<tr>
+<td align="right">1940317</td>
+<td align="right">420</td>
+<td>2016-07-07T12:51:00</td>
+<td>2016-07-07T12:58:00</td>
+<td align="right">3032</td>
+<td align="right">34.0498886</td>
+<td align="right">-118.25588</td>
+<td align="right">3032</td>
+<td align="right">34.0498886</td>
+<td align="right">-118.25588</td>
+<td align="right">6674</td>
+<td align="right">0</td>
+<td>Round Trip</td>
+<td>Walk-up</td>
+<td>{&#39;longitude&#39;: &#39;-118.25588&#39;, &#39;latitude&#39;: &#39;34.0498886&#39;, &#39;needs_recoding&#39;: False}</td>
+<td>{&#39;longitude&#39;: &#39;-118.25588&#39;, &#39;latitude&#39;: &#39;34.0498886&#39;, &#39;needs_recoding&#39;: False}</td>
+</tr>
+<tr>
+<td align="right">1944075</td>
+<td align="right">780</td>
+<td>2016-07-07T12:51:00</td>
+<td>2016-07-07T13:04:00</td>
+<td align="right">3021</td>
+<td align="right">34.0456085</td>
+<td align="right">-118.23703</td>
+<td align="right">3054</td>
+<td align="right">34.0392189</td>
+<td align="right">-118.23649</td>
+<td align="right">6717</td>
+<td align="right">30</td>
+<td>One Way</td>
+<td>Monthly Pass</td>
+<td>{&#39;longitude&#39;: &#39;-118.23703&#39;, &#39;latitude&#39;: &#39;34.0456085&#39;, &#39;needs_recoding&#39;: False}</td>
+<td>{&#39;longitude&#39;: &#39;-118.23649&#39;, &#39;latitude&#39;: &#39;34.0392189&#39;, &#39;needs_recoding&#39;: False}</td>
+</tr>
+<tr>
+<td align="right">1944073</td>
+<td align="right">600</td>
+<td>2016-07-07T12:54:00</td>
+<td>2016-07-07T13:04:00</td>
+<td align="right">3022</td>
+<td align="right">34.0460701</td>
+<td align="right">-118.23309</td>
+<td align="right">3014</td>
+<td align="right">34.0566101</td>
+<td align="right">-118.23721</td>
+<td align="right">5721</td>
+<td align="right">30</td>
+<td>One Way</td>
+<td>Monthly Pass</td>
+<td>{&#39;longitude&#39;: &#39;-118.23309&#39;, &#39;latitude&#39;: &#39;34.0460701&#39;, &#39;needs_recoding&#39;: False}</td>
+<td>{&#39;longitude&#39;: &#39;-118.23721&#39;, &#39;latitude&#39;: &#39;34.0566101&#39;, &#39;needs_recoding&#39;: False}</td>
+</tr>
+<tr>
+<td align="right">1944067</td>
+<td align="right">600</td>
+<td>2016-07-07T12:59:00</td>
+<td>2016-07-07T13:09:00</td>
+<td align="right">3076</td>
+<td align="right">34.0405998</td>
+<td align="right">-118.25384</td>
+<td align="right">3005</td>
+<td align="right">34.0485497</td>
+<td align="right">-118.25905</td>
+<td align="right">5957</td>
+<td align="right">365</td>
+<td>One Way</td>
+<td>Flex Pass</td>
+<td>{&#39;longitude&#39;: &#39;-118.25384&#39;, &#39;latitude&#39;: &#39;34.0405998&#39;, &#39;needs_recoding&#39;: False}</td>
+<td>{&#39;longitude&#39;: &#39;-118.25905&#39;, &#39;latitude&#39;: &#39;34.0485497&#39;, &#39;needs_recoding&#39;: False}</td>
+</tr>
+</tbody></table>
+
+
+
+
+</div>
+
+
+
+
+</body>
+
+</html>

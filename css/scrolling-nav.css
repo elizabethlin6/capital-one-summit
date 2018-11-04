@@ -1,0 +1,144 @@
+/* #invite {
+   background-image: url("bike.jpg");
+   min-height: 3000px;
+} */
+body {
+   /* background-image: url("bike.jpg"); */
+   /* background-size: 100em 50em; */
+   background-color: #b8f3f4;
+}
+#names {
+    font-family: 'Niconne', cursive;
+}
+
+button.btn.btn-lg.btn-square {
+    border-radius: 0%;
+    background-color: #292b2c;
+    color: white;
+    margin-top: 20px;
+}
+
+#footer {
+    background-color: #292b2c;
+    color: white;
+    padding-left: 5px;
+    margin: auto -15px;
+}
+
+a.nav-link {
+    color: #292b2c;
+}
+
+div#text {
+    margin-top: 100px;
+}
+
+li.nav-item {
+    border-radius: 0px;
+    margin: 5px;
+    border: 1px solid #292b2c;
+}
+
+#engaged {
+    margin: 20px;
+    font-size: 4em;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px black solid;
+    font: 12px sans-serif;
+}
+
+td {
+    border: 1px black solid;
+    padding: 5px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-image: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 285px;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 220px;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
