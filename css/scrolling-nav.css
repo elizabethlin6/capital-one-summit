@@ -5,10 +5,9 @@
 body {
    /* background-image: url("bike.jpg"); */
    /* background-size: 100em 50em; */
-   background-color: #b8f3f4;
 }
 #names {
-    font-family: 'Niconne', cursive;
+    font-family: 'Mukta Mahee', sans-serif;
 }
 
 button.btn.btn-lg.btn-square {
@@ -56,7 +55,6 @@ td {
 }
 
 
-
 * {
     box-sizing: border-box;
 }
@@ -64,7 +62,7 @@ td {
 body {
     background-color: #f1f1f1;
     padding: 20px;
-    font-family: Arial;
+    font-family: 'Mukta Mahee', sans-serif;
 }
 
 /* Center website */
@@ -82,7 +80,7 @@ h1 {
     margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column */
+/* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
     padding: 8px;
@@ -103,8 +101,8 @@ h1 {
 
 /* Content */
 .content {
-    background-image: white;
-    padding: 10px;
+    background-color: white;
+    padding: 20px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
