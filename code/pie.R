@@ -14,4 +14,8 @@ end <- mutate(all_stations, end_num = length(unique(all_stations$End.Station.ID)
 round_trip_num <- nrow(bikes %>% filter((Trip.Route.Category == "Round Trip")))
 one_way_num <- nrow(bikes %>% filter((Trip.Route.Category == "One Way")))
 compare_vector <- c(round_trip_num, one_way_num)
-pie(compare_vector, col=c("#ff91d9", "#90fcff"), labels=c("Round Trip", "One Way"), main = "Distribution of Trip Routes") 
+pct <- round(compare_vector/sum(compare_vector)*100)
+lbls <- c("Round Trip", "One Way")
+lbls <- paste(lbls, pct) # add percents to labels 
+lbls <- paste(lbls,"%",sep="") # ad % to labels 
+pie(compare_vector, col=c("#ff91d9", "#90fcff"), labels=lbls, main = "Distribution of Trip Routes") 

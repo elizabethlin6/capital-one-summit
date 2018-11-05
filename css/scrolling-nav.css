@@ -60,7 +60,7 @@ td {
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 20px;
     font-family: 'Mukta Mahee', sans-serif;
 }
@@ -123,7 +123,7 @@ div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 285px;
+    width: 278px;
 
 }
 
@@ -139,4 +139,19 @@ div.gallery img {
 div.desc {
     padding: 10px;
     text-align: center;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/la.jpg");
+
+    /* Set a specific height */
+    min-height: 450px;
+    /* max-width: 300px; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
